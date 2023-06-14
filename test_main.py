@@ -1,7 +1,7 @@
 import main 
 
-def index():
+def test_index():
     assert main.index() == 'Hello, world!'
     
-def cow():
+def test_cow():
     assert main.cow() == 'MOoooOo!'
