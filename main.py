@@ -1,5 +1,3 @@
-# Zelfde voorbeeld uit lesstof module 8
-
 # Import what we need from flask
 from flask import Flask
 
