@@ -14,3 +14,6 @@ def index():
 @app.route('/cow')
 def cow():
     return 'MOoooOo!'
+
+if __name__ == '__main__':
+    app.run()
