@@ -30,6 +30,7 @@ jobs:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
+          port: ${{ secrets.CD_SECRET_PORT }}
           script: |
             cd $GITHUB_WORKSPACE
             git pull origin main
