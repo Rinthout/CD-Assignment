@@ -18,3 +18,21 @@ jobs:
       - name: show workspace
         run: |
           dir
+  deploy:
+    needs: run-tests
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Commands using ssh key
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.CD_SECRET_HOST }}
+          username: ${{ secrets.CD_SECRET_USERNAME }}
+          key: ${{ secrets.CD_SECRET_KEY }}
+          port: ${{ secrets.CD_SECRET_PORT }}
+          script: |
+            cd $GITHUB_WORKSPACE
+            git pull origin main
+            systemctl restart nginx
+
