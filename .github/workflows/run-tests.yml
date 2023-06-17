@@ -1,8 +1,7 @@
 name: Run Tests
-
 on: 
   push:
-    branches : [master]
+    branches : [ master ]
 jobs:
   run-tests:
     runs-on: ubuntu-20.04
