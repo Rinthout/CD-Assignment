@@ -1,7 +1,5 @@
 name: Run Tests
-on: 
-  push:
-    branches : [ master ]
+on: push
 jobs:
   run-tests:
     runs-on: ubuntu-20.04
@@ -34,7 +32,6 @@ jobs:
           port: ${{ secrets.CD_SECRET_PORT }}
           script: |
             cd $GITHUB_WORKSPACE
-            git pull origin master
-            git status
+            git pull origin main
             systemctl restart nginx
 
