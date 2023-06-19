@@ -31,6 +31,6 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd /home/CD
-            git pull
-            systemctl restart CD
+            git pull origin master
+            systemctl restart nginx
 
