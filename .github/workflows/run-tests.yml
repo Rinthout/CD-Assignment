@@ -29,8 +29,5 @@ jobs:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
-          script: |
-            cd /home/CD-Assignment/
-            git pull origin master
-            systemctl restart --now CD
+          script: sh /home/CD_Assignment/script_CD.sh
 
