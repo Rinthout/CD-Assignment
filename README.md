@@ -1,8 +1,8 @@
 ![example workflow](https://github.com/Rinthout/CD-Assignment/actions/workflows/run-tests.yml/badge.svg)
 
-<h1>Winc Academy - Back End Development. </h1>
+<h1>Winc Academy - Back End Development</h1>
 
-</h2> Module 8. CD Assignment</h2>
+<h2>Module 8. CD Assignment</h2>
 
 Bijgaand mijn begeleidende tekst in deze README voor mijn assignment van Module 8 van de Back End Developement opleiding. Opdracht hierbij is om een Pyhton app via Flask te draaien via een VPS omgeving. En deze via GitHub Actions te beveiligen met ssh-keys (public en private secret key). Deze droplet heb ik opgezet in Digital Ocean conform een voorgaande opdracht. Hierbij wil ik graag 3 onderdelen beschrijven die ik tegen ben gekomen.
 
