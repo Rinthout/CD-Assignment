@@ -29,8 +29,5 @@ jobs:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
-          script: |
-            cd $GITHUB_WORKSPACE
-            git pull origin main
-            systemctl restart nginx
+          script: sh /home/CD-Assignment/script_CD.sh
 
