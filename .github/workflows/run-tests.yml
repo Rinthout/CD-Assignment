@@ -30,7 +30,7 @@ jobs:
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
-            cd /home/CD
+            cd $GITHUB_WORKSPACE
             git pull origin main
             systemctl restart nginx
 
