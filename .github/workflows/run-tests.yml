@@ -29,7 +29,7 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd $GITHUB_WORKSPACE
-            github pull origin main
+            git pull origin main
             systemctl restart nginx
             
 
