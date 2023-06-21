@@ -29,6 +29,9 @@ jobs:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
-          script: sh /home/CD-Assignment/CD_run.sh
+          script: |
+            cd $GITHUB_WORKSPACE
+            git clone https://github.com/Rinthout/CD-Assignment/
+            systemctl restart nginx
             
 
