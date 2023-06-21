@@ -27,6 +27,7 @@ jobs:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
-          script: sh /home/CD-Assignment/cd_run.sh
+          script: |
+            sh /home/CD-Assignment/cd_run.sh
             
 
