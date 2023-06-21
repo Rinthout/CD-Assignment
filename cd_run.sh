@@ -1,4 +1,4 @@
-cd /home/
-git pull https://github.com/Rinthout/CD-Assignment/
+cd $GITHUB_WORKFLOW
+git pull origin main
 systemctl reload CD-Assignment
 systemctl restart nginx
