@@ -1,3 +1,3 @@
 cd $GITHUB_WORKSPACE
-git pull/home/CD-Assignment
+git pull https://github.com/Rinthout/CD-Assignment/
 systemctl restart nginx
