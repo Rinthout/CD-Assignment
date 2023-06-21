@@ -28,6 +28,8 @@ jobs:
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
-            sh /home/CD-Assignment/cd_run.sh
+            cd $GITHUB_WORKSPACE
+            github pull origin main
+            systemctl restart nginx
             
 
