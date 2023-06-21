@@ -31,6 +31,6 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd /home/CD-Assignment
-            system restart CD-Assignment
+            system restart nginx
             
 
