@@ -21,17 +21,12 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
       - name: Commands using ssh key
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
-          script: |
-            cd $GITHUB_WORKSPACE
-            git pull origin main
-            systemctl restart nginx
+          script: sh /home/CD-Assignment/cd_run.sh
             
 
