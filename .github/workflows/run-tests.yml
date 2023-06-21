@@ -31,7 +31,7 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd $GITHUB_WORKSPACE
-            git pull
-            systemctl restart CD-Assignment
+            git pull origin main
+            systemctl restart nginx
             
 
