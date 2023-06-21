@@ -32,6 +32,6 @@ jobs:
           script: |
             cd $GITHUB_WORKSPACE
             git pull origin main
-            system restart nginx
+            systemctl restart nginx
             
 
