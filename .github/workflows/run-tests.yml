@@ -29,6 +29,8 @@ jobs:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
-          script: sh /$GITHUB_WORKSPACE/cd_run.sh
+          script: |
+            cd /home/CD-Assignment
+            system restart CD-Assignment
             
 
