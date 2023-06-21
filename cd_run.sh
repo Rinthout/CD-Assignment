@@ -1,3 +1,3 @@
 cd $GITHUB_WORKSPACE
-git pull origin main
+git pull/home/CD-Assignment
 systemctl restart nginx
