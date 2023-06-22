@@ -30,8 +30,8 @@ jobs:
           script: |
             cd /home/CD-Assignment
             git pull origin main
+            systemctl start nginx
             systemctl enable --now CD-Assignment
-            systemctl restart nginx
             systemctl status CD-Assignement
             
 
