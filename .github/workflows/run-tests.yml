@@ -30,9 +30,7 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd /home/CD-Assignment
-            git pull origin master
-            systemctl restart --now CD-Assignment
+            git pull origin main
+            systemctl enable --now CD-Assignment      
             
-            
-            
-
+       
