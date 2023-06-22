@@ -29,7 +29,7 @@ jobs:
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
-            cd /home/CD-Assignement
+            cd /home/CD-Assignment
             git pull origin main
             systemctl restart nginx      
             
