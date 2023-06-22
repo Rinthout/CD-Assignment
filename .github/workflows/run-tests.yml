@@ -31,6 +31,6 @@ jobs:
           script: |
             cd /home/
             git pull https://github.com/Rinthout/CD-Assignment.git
-            systemctl enable --now CD-Assignment      
+            systemctl restart nginx      
             
        
