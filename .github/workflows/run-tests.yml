@@ -30,8 +30,8 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd /home/CD-Assignment
-            systemctl start nginx
-            systemctl enable --now CD-Assignment
+            systemctl restart CD-Assignment
+            
             
             
             
