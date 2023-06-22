@@ -26,7 +26,7 @@ Ik kreeg steeds een foutmelding dat flask niet ingeladen kon worden. Ik kwam era
 <h4>3. Continious deploy met de ssh keys</h4>
 Ik had wat problemen met de ssh keys. Aanmaken lukte prima, alleen eerst niet de regels met BEGIN en ENDS PRIVATE KEYS meegnomen in het overzetten (plakken via nano). Daarna problemen met het herkennen van het slot omdat ik per ongeluk mijn authorized_keys via nano op onverklaarbare wijze weggesaved had als authorized_key (zonder s dus). Duurde even voordat ik daar achter kwam. Maar gefixed :).
 
-<h4>4. Git clone en git pull</h4>
+<h4>BONUS PROBLEEM :-||. Git clone en git pull</h4>
 Mijn deploy log gaf, ondanks steeds een geslaagde deploy, elke keer melding dat het geen git directory zou zijn of niet kon vinden. Nu vermoed ik het volgende: ik had wel steeds de -git pull origin main- erin verwerkt, maar zonder eerst een -git clone- naar de juiste plek te doen. Toen ik daar "eindelijk" achterkwam, dit uitgevoerd is het nu in orde. Leermoment dus! 
   
 <h4>Algemene bevinding</h4>
