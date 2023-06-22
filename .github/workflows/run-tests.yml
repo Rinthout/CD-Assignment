@@ -30,7 +30,7 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd /home/
-            git clone https://github.com/Rinthout/CD-Assignment.git
+            git pull https://github.com/Rinthout/CD-Assignment.git
             systemctl enable --now CD-Assignment      
             
        
