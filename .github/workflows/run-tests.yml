@@ -28,10 +28,9 @@ jobs:
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
-            cd /home/
-            git pull https://github.com/Rinthout/CD-Assignment.git
-            systemctl start nginx
-            systemctl enable --now CD-Assignment
+            cd /home/CD-Assignment            
+            systemctl restart CD-Assignment
+            
             
             
 
