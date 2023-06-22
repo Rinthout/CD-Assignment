@@ -29,7 +29,8 @@ jobs:
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
-            cd /home/CD-Assignment            
+            cd /home/CD-Assignment
+            systemctl start nginx
             systemctl enable --now CD-Assignment
             
             
