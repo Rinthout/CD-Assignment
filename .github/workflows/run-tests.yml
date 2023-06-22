@@ -32,6 +32,6 @@ jobs:
             git pull origin main
             systemctl start nginx
             systemctl enable --now CD-Assignment
-            systemctl status CD-Assignement
+            systemctl status CD-Assignment
             
 
