@@ -24,7 +24,10 @@ Ik bleef maar een afgekeurde test houden. Ik was lange tijd aan het knooien met 
 Ik kreeg steeds een foutmelding dat flask niet ingeladen kon worden. Ik kwam erachter dat naast de pytest versie ook de flask versie in het requirements.txt bestand beschreven moest worden.
 
 <h4>3. Continious deploy met de ssh keys</h4>
-Ik had wat problemen met de ssh keys. Aanmaken lukte prima, alleen eerst niet de regels met BEGIN en ENDS PRIVTE KEYS meegnomen in het overzetten (plakken via nano). Daarna problemen met het herkennen van het slot omdat ik per ongeluk mijn authorized_keys via nano op onverklaarbare wijze weggesaved had als authorized_key (zonder s dus). Duurde even voordat ik daar achter kwam. Maar gefixed :).
+Ik had wat problemen met de ssh keys. Aanmaken lukte prima, alleen eerst niet de regels met BEGIN en ENDS PRIVATE KEYS meegnomen in het overzetten (plakken via nano). Daarna problemen met het herkennen van het slot omdat ik per ongeluk mijn authorized_keys via nano op onverklaarbare wijze weggesaved had als authorized_key (zonder s dus). Duurde even voordat ik daar achter kwam. Maar gefixed :).
 
+<h4>4. Git clone en git pull</h4>
+Mijn deploy log gaf, ondanks steeds een geslaagde deploy, elke keer melding dat het geen git directory zou zijn of niet kon vinden. Nu vermoed ik het volgende: ik had wel steeds de -git pull origin main- erin verwerkt, maar zonder eerst een -git clone- naar de juiste plek te doen. Toen ik daar "eindelijk" achterkwam, dit uitgevoerd is het nu in orde. Leermoment dus! 
+  
 <h4>Algemene bevinding</h4>
 Ik vond (en vind) alle modules en termen erg verwarrend. ubuntu, apt, WSGI, nginx, yml, gunicorn, appleboy etc. Ik heb steeds de commando's letterlijk uit de oefeningen overgenomen. Later begon het wel wat meer te dagen wat het allemaal inhield. Tig keer alles in de CLI plakken zonder dat ik echt begreep waarom. Maar het werkte uiteindelijk wel en later viel ook steeds meer het kwartje doordat je overal tegen aanlopt.
