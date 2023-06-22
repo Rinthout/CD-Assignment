@@ -29,8 +29,8 @@ jobs:
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
-            cd /home/CD-Assignment
-            git pull origin main
+            cd /home/
+            git clone https://github.com/Rinthout/CD-Assignment.git
             systemctl enable --now CD-Assignment      
             
        
