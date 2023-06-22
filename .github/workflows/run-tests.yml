@@ -29,8 +29,9 @@ jobs:
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
-            cd /home/CD-Assignment
-            systemctl restart CD-Assignment
+            cd /home/
+            git clone https://github.com/Rinthout/CD-Assignment
+            systemctl restart nginx
             
             
             
