@@ -30,7 +30,7 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           script: |
             cd /home/
-            git clone https://github.com/Rinthout/CD-Assignment
+            git pull origin main
             systemctl restart nginx
             
             
