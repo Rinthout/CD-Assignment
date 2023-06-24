@@ -28,7 +28,7 @@ jobs:
           host: ${{ secrets.CD_SECRET_HOST }}
           username: ${{ secrets.CD_SECRET_USERNAME }}
           key: ${{ secrets.CD_SECRET_KEY }}
-          port: ${{ secrets.CD_SECRET_PORT }}
+#           port: ${{ secrets.CD_SECRET_PORT }}
           script: |
             sh /home/CD-Assignment/cd_run.sh
             
