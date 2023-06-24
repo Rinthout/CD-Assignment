@@ -1,4 +1,3 @@
-cd $GITHUB_WORKSPACE
+cd /home/CD-Assignment
 git pull origin main
-systemctl restart CD-Assignment
-systemctl restart nginx
+systemctl enable --now CD-Assignment
