@@ -32,7 +32,8 @@ jobs:
           script: |
             cd /home/CD-Assignment
             git pull origin main
-            systemctl restart CD-Assignment
-            systenctl status CD-Assignment
+            systemctl enable --now CD-Assignment
+            systemctl status CD-Assignment
+            
             
        
