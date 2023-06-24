@@ -30,7 +30,9 @@ jobs:
           key: ${{ secrets.CD_SECRET_KEY }}
           port: ${{ secrets.CD_SECRET_PORT }}
           script: |
-            sh /home/CD-Assignment/cd_run.sh
+            cd /home/CD-Assignment
+            git pull origin main
+            systemctl restart CD-Assignment
             
             
        
